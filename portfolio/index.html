@@ -6,9 +6,94 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>Sabriel Adriel</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-blue-500 text-white">
-      Hello world!
-    </h1>
+  <body class="bg-slate-900 text-white">
+    <!-- Hero Section -->
+    <section class="px-8 py-24 max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div>
+          <div
+            class="inline-block bg-blue-600 text-sm px-4 py-2 rounded-full mb-6"
+          >
+            Open to work!
+          </div>
+
+          <h1 class="text-5xl font-bold mb-4">
+            Hey, I'm Sabriel Adriel —
+          </h1>
+
+          <!-- Typing Animation Roles -->
+          <div class="text-2xl font-semibold text-blue-400 mb-8 h-10">
+            <span id="role-text"></span><span id="cursor" class="animate-blink">|</span>
+          </div>
+
+          <p class="text-xl text-gray-400 mb-8">
+            IT Student and freelancer who deeply likes technology
+            stuffs. I like building, breaking, and solving problems I encounter.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex gap-4 mb-12 items-center">
+            <a
+              href="contact.html"
+              class="px-8 h-12 border border-gray-500 rounded-full hover:border-blue-400 hover:text-blue-400 transition flex items-center justify-center"
+            >
+              ✉️ Get in touch
+            </a>
+            <a
+              href="#"
+              class="px-8 h-12 bg-blue-600 rounded-full hover:bg-blue-700 transition flex items-center justify-center"
+            >
+              💬 Join my Discord
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center">
+          <div class="relative pt-4 pb-12">
+            <div
+              class="w-42 h-42 rounded-full border-4 border-blue-400 overflow-hidden bg-gray-800 flex items-center justify-center"
+            >
+              <img
+                src="./assets/images/hero/my-picture.jpg"
+                alt="Sabriel Adriel"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex gap-6 justify-center absolute bottom-0 left-1/2 transform -translate-x-1/2">
+              <a
+                href="#"
+                class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition"
+                >🐙</a
+              >
+              <a
+                href="#"
+                class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition"
+                >💼</a
+              >
+              <a
+                href="#"
+                class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition"
+                >📷</a
+              >
+              <a
+                href="#"
+                class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition"
+                >💬</a
+              >
+              <a
+                href="#"
+                class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition"
+                >📧</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
