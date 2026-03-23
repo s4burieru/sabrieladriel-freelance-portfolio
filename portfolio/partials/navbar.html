@@ -1,0 +1,66 @@
+<!-- Modern Floating Navbar -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 backdrop-blur-lg rounded-full px-8 py-3 border border-white/20 dark:border-white/10 shadow-sm transition-all duration-300 max-w-6xl w-11/12">
+  <div class="flex items-center justify-between gap-8">
+    
+    <!-- Left Section: Logo/Home -->
+    <div class="flex-shrink-0">
+      <a href="#hero" class="font-poppins font-bold text-lg text-white hover:text-blue-300 transition-colors duration-200 flex items-center gap-2">
+        <span class="text-2xl">SA</span>
+        <span class="hidden sm:inline"></span>
+      </a>
+    </div>
+
+    <!-- Middle Section: Navigation Links -->
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#about" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">About</a>
+      <a href="#skills" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">Skills</a>
+      <a href="#projects" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">Projects</a>
+      <a href="#services" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">Services</a>
+      <a href="#blog" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">Blog</a>
+      <a href="#contact" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+
+    <!-- Right Section: Resume, Theme Toggle -->
+    <div class="flex items-center gap-4">
+      <a href="#resume" class="hidden sm:inline-block font-poppins text-sm font-semibold px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200">
+        Resume
+      </a>
+
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="relative inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-0" aria-label="Toggle dark mode">
+        <svg id="sun-icon" class="w-5 h-5 text-yellow-300 hidden" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 1.78a1 1 0 011.39 0l.707.707a1 1 0 01-1.39 1.39L14.63 3.22a1 1 0 010-1.39zm2.44 2.44a1 1 0 011.39 0l.707.707a1 1 0 01-1.39 1.39l-.707-.707a1 1 0 010-1.39zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-6.5 7a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM3.22 14.22a1 1 0 011.39 0l.707.707a1 1 0 01-1.39 1.39L3.22 15.61a1 1 0 010-1.39zm2.44-2.44a1 1 0 011.39 0l.707.707a1 1 0 01-1.39 1.39L5.66 11.78a1 1 0 010-1.39zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zm10-9a4 4 0 100 8 4 4 0 000-8z" clip-rule="evenodd" />
+        </svg>
+        <svg id="moon-icon" class="w-5 h-5 text-white/70" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-0" aria-label="Toggle mobile menu">
+        <svg id="menu-icon" class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden absolute top-full left-8 right-8 mt-4 backdrop-blur-lg rounded-2xl border border-white/20 p-4 lg:hidden">
+    <div class="flex flex-col gap-3">
+      <a href="#about" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">About</a>
+      <a href="#skills" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Skills</a>
+      <a href="#projects" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Projects</a>
+      <a href="#services" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Services</a>
+      <a href="#blog" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Blog</a>
+      <a href="#contact" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Contact</a>
+      <a href="#resume" class="font-poppins text-sm font-semibold px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 text-center">
+        Resume
+      </a>
+    </div>
+  </div>
+</nav>
+
