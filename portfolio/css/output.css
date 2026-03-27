@@ -372,8 +372,26 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-12\/1 {
+    width: calc(12 / 1 * 100%);
+  }
+  .w-12\/11 {
+    width: calc(12 / 11 * 100%);
+  }
+  .w-12\/12 {
+    width: calc(12 / 12 * 100%);
+  }
+  .w-12\/13 {
+    width: calc(12 / 13 * 100%);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-112 {
+    width: calc(var(--spacing) * 112);
+  }
+  .w-112\/12 {
+    width: calc(112 / 12 * 100%);
   }
   .w-full {
     width: 100%;
@@ -687,6 +705,10 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
   }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);

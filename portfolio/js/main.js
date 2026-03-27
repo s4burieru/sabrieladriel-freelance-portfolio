@@ -134,6 +134,55 @@ function initializeNavbar() {
       }
     });
   });
+
+  // Navbar scroll animation (desktop only - lg breakpoint 1024px and above)
+  const navbar = document.getElementById('main-navbar');
+  if (navbar) {
+    // Initialize navbar width on page load
+    navbar.style.maxWidth = '1350px';
+    
+    let scrollTimeout;
+    const scrollAnimationBreakpoint = 1024; // lg breakpoint
+    
+    console.log('Navbar scroll animation initialized');
+    
+    const handleScroll = () => {
+      // Only apply animation on screens lg and above
+      if (window.innerWidth < scrollAnimationBreakpoint) {
+        return;
+      }
+      
+      if (window.scrollY > 100) {
+        // When scrolled down, add delay before making navbar more compact
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          navbar.style.maxWidth = '50rem';
+          navbar.style.padding = '0.5rem 1.5rem';
+          navbar.style.top = '1rem';
+          console.log('Navbar compact - scrollY:', window.scrollY);
+        }, 300); // 300ms delay
+      } else {
+        // When scrolling back up (scrollY <= 100), reset to default wider width immediately
+        clearTimeout(scrollTimeout);
+        navbar.style.maxWidth = '1350px';
+        navbar.style.padding = '0.625rem 2rem';
+        navbar.style.top = '1.5rem';
+        console.log('Navbar wide - scrollY:', window.scrollY);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Handle window resize to reset animation on smaller screens
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < scrollAnimationBreakpoint) {
+        clearTimeout(scrollTimeout);
+        navbar.style.maxWidth = '1350px';
+        navbar.style.padding = '0.625rem 2rem';
+        navbar.style.top = '1.5rem';
+      }
+    });
+  }
 }
 
 // Load navbar when DOM is ready
