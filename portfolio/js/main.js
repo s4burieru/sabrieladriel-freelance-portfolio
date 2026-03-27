@@ -6,8 +6,12 @@ async function loadNavbar() {
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
       navbarContainer.innerHTML = navbarHTML;
-      // Reinitialize navbar functionality after loading
-      initializeNavbar();
+      
+      // Use a small timeout to ensure DOM is updated
+      setTimeout(() => {
+        console.log('Initializing navbar after fetch');
+        initializeNavbar();
+      }, 100);
     }
   } catch (error) {
     console.error('Error loading navbar:', error);
@@ -28,12 +32,12 @@ function initializeNavbar() {
     function setTheme(theme) {
       if (theme === 'dark') {
         html.classList.add('dark');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
+        if (sunIcon) sunIcon.classList.remove('hidden');
+        if (moonIcon) moonIcon.classList.add('hidden');
       } else {
         html.classList.remove('dark');
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
+        if (sunIcon) sunIcon.classList.add('hidden');
+        if (moonIcon) moonIcon.classList.remove('hidden');
       }
       localStorage.setItem('theme', theme);
     }
@@ -45,45 +49,91 @@ function initializeNavbar() {
       const theme = html.classList.contains('dark') ? 'light' : 'dark';
       setTheme(theme);
     });
+  }
 
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
+  // Mobile Menu Toggle - Create/find or create dynamically if needed
+  let mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  let mobileMenu = document.getElementById('mobile-menu');
+  let menuIcon = document.getElementById('menu-icon');
+  let closeIcon = document.getElementById('close-icon');
 
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        menuIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-      });
+  // If elements weren't found in DOM (due to parsing issues), create them
+  if (!closeIcon && menuIcon) {
+    // Create close-icon if it's missing
+    closeIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    closeIcon.id = 'close-icon';
+    closeIcon.setAttribute('class', 'w-5 h-5 text-white hidden');
+    closeIcon.setAttribute('fill', 'none');
+    closeIcon.setAttribute('stroke', 'currentColor');
+    closeIcon.setAttribute('viewBox', '0 0 24 24');
+    closeIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+    menuIcon.parentElement.appendChild(closeIcon);
+  }
 
-      // Close mobile menu when a link is clicked
-      const mobileLinks = mobileMenu.querySelectorAll('a');
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          menuIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
-        });
-      });
+  if (!mobileMenu) {
+    // Create mobile menu if it's missing
+    mobileMenu = document.createElement('div');
+    mobileMenu.id = 'mobile-menu';
+    mobileMenu.setAttribute('class', 'hidden fixed top-24 left-4 right-4 z-40 backdrop-blur-lg rounded-2xl border border-white/20 p-4 lg:hidden bg-black/90');
+    mobileMenu.innerHTML = `
+      <div class="flex flex-col gap-3">
+        <a href="about.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">About</a>
+        <a href="skills.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Skills</a>
+        <a href="projects.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Projects</a>
+        <a href="services.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Services</a>
+        <a href="blog.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Blog</a>
+        <a href="contact.html" class="font-poppins text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 py-2">Contact</a>
+        <a href="#resume" class="font-poppins text-sm font-semibold px-4 py-2 rounded-full bg-white text-black hover:bg-blue-50 transition-colors duration-200 text-center">Resume</a>
+      </div>
+    `;
+    const nav = document.querySelector('nav');
+    if (nav) {
+      nav.appendChild(mobileMenu);
     }
+  }
 
-    // Smooth scroll behavior
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
+  console.log('Mobile Menu Elements After Fix:');
+  console.log('- mobileMenuBtn:', !!mobileMenuBtn);
+  console.log('- mobileMenu:', !!mobileMenu);
+  console.log('- menuIcon:', !!menuIcon);
+  console.log('- closeIcon:', !!closeIcon);
+
+  // Setup event listeners if all elements exist
+  if (mobileMenuBtn && mobileMenu && menuIcon && closeIcon) {
+    console.log('Setting up mobile menu functionality');
+    mobileMenuBtn.addEventListener('click', () => {
+      console.log('Menu button clicked');
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
       });
     });
+  } else {
+    console.error('Could not initialize mobile menu - missing elements');
   }
+
+  // Smooth scroll behavior
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
 }
 
 // Load navbar when DOM is ready
@@ -97,6 +147,7 @@ if (document.readyState === 'loading') {
 const roles = [
   'Aspiring Software Engineer',
   'Front-end Web Developer',
+  'UI/UX Designer',
   'Graphic Designer',
   'Video Editor',
   'OSINT Investigator',
