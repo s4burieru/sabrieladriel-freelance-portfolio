@@ -158,7 +158,7 @@ function initializeNavbar() {
         scrollTimeout = setTimeout(() => {
           navbar.style.maxWidth = '50rem';
           navbar.style.padding = '0.5rem 1.5rem';
-          navbar.style.top = '1rem';
+          navbar.style.top = '1.8rem';
           console.log('Navbar compact - scrollY:', window.scrollY);
         }, 100); // 100ms delay
       } else {
