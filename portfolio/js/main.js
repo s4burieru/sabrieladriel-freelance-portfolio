@@ -160,14 +160,16 @@ function initializeNavbar() {
           navbar.style.padding = '0.5rem 1.5rem';
           navbar.style.top = '1rem';
           console.log('Navbar compact - scrollY:', window.scrollY);
-        }, 300); // 300ms delay
+        }, 100); // 100ms delay
       } else {
-        // When scrolling back up (scrollY <= 100), reset to default wider width immediately
+        // When scrolling back up (scrollY <= 100), add delay before resetting to default wider width
         clearTimeout(scrollTimeout);
-        navbar.style.maxWidth = '1350px';
-        navbar.style.padding = '0.625rem 2rem';
-        navbar.style.top = '1.5rem';
-        console.log('Navbar wide - scrollY:', window.scrollY);
+        scrollTimeout = setTimeout(() => {
+          navbar.style.maxWidth = '1350px';
+          navbar.style.padding = '0.625rem 2rem';
+          navbar.style.top = '1.5rem';
+          console.log('Navbar wide - scrollY:', window.scrollY);
+        }, 100); // 100ms delay
       }
     };
     
