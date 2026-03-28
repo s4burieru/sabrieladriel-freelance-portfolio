@@ -734,8 +734,20 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-13 {
+    padding-top: calc(var(--spacing) * 13);
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
   }
   .text-center {
     text-align: center;
@@ -1235,6 +1247,21 @@
       padding-top: calc(var(--spacing) * 12);
     }
   }
+  .md\:pt-16 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:pt-24 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:pb-24 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 24);
+    }
+  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
@@ -1276,6 +1303,11 @@
   .lg\:pt-0 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:pt-16 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 16);
     }
   }
   .dark\:bg-white {

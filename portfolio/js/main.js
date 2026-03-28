@@ -196,13 +196,13 @@ if (document.readyState === 'loading') {
 
 // Typing Animation
 const roles = [
-  'Aspiring Software Engineer',
-  'Front-end Web Developer',
-  'UI/UX Designer',
-  'Graphic Designer',
-  'Video Editor',
-  'OSINT Investigator',
-  'Cybersecurity Enthusiast'
+  'Aspiring Software Engineer.',
+  'Front-end Web Developer.',
+  'UI/UX Designer.',
+  'Graphic Designer.',
+  'Video Editor.',
+  'OSINT Investigator.',
+  'Cybersecurity Enthusiast.'
 ];
 
 let currentRoleIndex = 0;
