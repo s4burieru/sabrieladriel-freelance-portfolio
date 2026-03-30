@@ -336,6 +336,9 @@
   .h-full {
     height: 100%;
   }
+  .min-h-100 {
+    min-height: calc(var(--spacing) * 100);
+  }
   .min-h-110 {
     min-height: calc(var(--spacing) * 110);
   }
@@ -914,6 +917,11 @@
       height: calc(var(--spacing) * 40);
     }
   }
+  .sm\:min-h-120 {
+    @media (width >= 40rem) {
+      min-height: calc(var(--spacing) * 120);
+    }
+  }
   .sm\:w-5 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 5);
@@ -972,6 +980,11 @@
   .sm\:gap-12 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 12);
+    }
+  }
+  .sm\:p-6 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 6);
     }
   }
   .sm\:p-7 {
@@ -1087,6 +1100,11 @@
   .md\:gap-16 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:p-7 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 7);
     }
   }
   .md\:px-8 {
