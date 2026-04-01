@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Hi, I'm Sabriel!",
+    "date": "Dec 27, 2025",
+    "readTime": 1,
+    "excerpt": "This is my first blog post! I will be sharing my thoughts, experiences, and insights on various topics related to personal growth, tech, and more. Stay tuned for exciting content!",
+    "image": "./assets/images/blog-post-1.jpg",
+    "tags": ["Personal", "Learning"],
+    "author": "Sabriel Adriel San Agustin"
+  }
+]
