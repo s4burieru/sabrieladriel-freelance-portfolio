@@ -194,6 +194,33 @@ if (document.readyState === 'loading') {
   loadNavbar();
 }
 
+// Load footer from partial file
+async function loadFooter() {
+  try {
+    const response = await fetch('./partials/footer.html');
+    const footerHTML = await response.text();
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+      footerContainer.innerHTML = footerHTML;
+      
+      // Set current year in footer
+      const yearElement = document.getElementById('footer-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    }
+  } catch (error) {
+    console.error('Error loading footer:', error);
+  }
+}
+
+// Load footer when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadFooter);
+} else {
+  loadFooter();
+}
+
 // Typing Animation
 const roles = [
   'Aspiring Software Engineer',
