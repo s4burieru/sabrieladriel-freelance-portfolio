@@ -1350,6 +1350,12 @@
       padding-top: calc(var(--spacing) * 0);
     }
   }
+  .lg\:text-5xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
   .lg\:text-6xl {
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
@@ -1410,6 +1416,9 @@
   -webkit-backface-visibility: hidden;
   perspective: 1000px;
   -webkit-perspective: 1000px;
+}
+.w-screen:hover .animate-infinite-scroll {
+  animation-play-state: paused;
 }
 @property --tw-translate-x {
   syntax: "*";

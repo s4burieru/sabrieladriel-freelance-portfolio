@@ -45,3 +45,7 @@
   perspective: 1000px;
   -webkit-perspective: 1000px;
 }
+
+.w-screen:hover .animate-infinite-scroll {
+  animation-play-state: paused;
+}
