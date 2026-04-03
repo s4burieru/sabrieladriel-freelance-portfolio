@@ -34,10 +34,10 @@ async function renderFeaturedBlogPosts() {
         <!-- Date and Read Time -->
         <div class="flex items-center gap-4 mb-3 sm:mb-4 text-xs sm:text-sm text-gray-500">
           <span class="flex items-center gap-1">
-            📅 ${post.date}
+            <img src="./assets/images/calendar.svg" alt="calendar" class="w-3.8 h-3.8"> ${post.date}
           </span>
           <span class="flex items-center gap-1">
-            ⏱️ ${post.readTime} min read
+            <img src="./assets/images/clock.svg" alt="clock" class="w-4 h-4"> ${post.readTime} min read
           </span>
         </div>
         
@@ -90,7 +90,7 @@ async function renderAllBlogPosts() {
         <!-- Date and Read Time -->
         <div class="flex items-center gap-4 mb-3 sm:mb-4 text-xs sm:text-sm text-gray-500">
           <span class="flex items-center gap-1">
-            📅 ${post.date}
+            <img src="../assets/images/calendar.svg" alt="calendar" class="w-4 h-4"> ${post.date}
           </span>
           <span class="flex items-center gap-1">
             ⏱️ ${post.readTime} min read
