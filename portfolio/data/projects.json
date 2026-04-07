@@ -6,6 +6,7 @@
     "thumbnail": "./assets/images/esports-eis-thumbnail.png",
     "website": "#",
     "source": "#",
+    "category": "desktop app development",
     "technologies": ["VB.NET", "GunaUI", "MS Access", "Visual Studio"]
   },
   {
@@ -15,6 +16,7 @@
     "thumbnail": "./assets/images/gwa-calcu-thumbnail.png",
     "website": "#",
     "source": "#",
+    "category": "web development",
     "technologies": ["HTML", "CSS", "JavaScript", "VS Code"]
   },
   {
@@ -24,6 +26,7 @@
     "thumbnail": "./assets/images/gadgetspot-thumbnail.png",
     "website": "#",
     "source": "#",
+    "category": ["graphic design", "uiux design"],
     "technologies": ["Figma", "Photoshop"]
   }
 ]
