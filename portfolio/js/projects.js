@@ -26,12 +26,7 @@ function filterAndSortProjects(projects, searchTerm, category) {
 
   // Filter by category
   if (category) {
-    filtered = filtered.filter(project => {
-      if (Array.isArray(project.category)) {
-        return project.category.includes(category);
-      }
-      return project.category === category;
-    });
+    filtered = filtered.filter(project => project.category === category);
   }
 
   return filtered;
