@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>About | Sabriel Adriel</title>
+  </head>
+
+  <body
+    class="text-white relative font-poppins"
+    style="background-color: #0a0a0a; min-height: 100vh; overflow-x: hidden;"
+  >
+    <!-- Dark Horizon Glow -->
+    <div
+      class="fixed inset-0 z-10 pointer-events-none"
+      style="
+        background: radial-gradient(125% 125% at 50% 10%, #00000000 40%, #0d1a36 100%);
+      "
+    ></div>
+
+    <!-- Dark White Dotted Grid Background -->
+    <div
+      class="fixed inset-0 z-5 pointer-events-none"
+      style="
+        background: #000000;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
+        background-size: 30px 30px;
+        background-position: 0 0;
+      "
+    ></div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+      <!-- Navbar Container -->
+      <div id="navbar-container"></div>
+
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="flex items-center justify-center px-6 sm:px-6 md:px-8 pt-32 md:pt-32 pb-28 md:pb-28"
+        style="min-height: 100vh"
+      >
+        <div class="max-w-6xl w-full">
+          <!-- About Content -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <!-- Left Column - Profile Section -->
+            <div class="flex flex-col items-center md:items-start">
+              <!-- Profile Image -->
+              <div class="relative w-full max-w-md aspect-square rounded-2xl border-2 border-white/10 bg-linear-to-br from-blue-500/10 to-purple-500/10 overflow-hidden mb-6">
+                <img
+                  src="./assets/images/my-picture.jpg"
+                  alt="Sabriel Adriel"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <!-- Simple Info Below Image -->
+              <div class="space-y-2 text-gray-500 text-sm">
+                <div class="flex items-center gap-2">
+                  <span><img src="assets/icons/birthday.svg" class="w-4 h-4"></span>
+                  <span>20 years old</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span><img src="assets/icons/school.svg" class="w-4 h-4"></span>
+                  <span>IT @ ESCR</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column - Main Content -->
+            <div class="flex flex-col">
+              <!-- Main Heading -->
+              <h1 
+                class="font-bold flex items-center gap-2"
+                style="font-size: clamp(24px, 5vw, 40px);"
+              >
+                Sabriel Adriel San Agustin
+              </h1>
+
+              <!-- Name Introduction -->
+              <p class="text-blue-600 font-semibold text-lg mb-6">
+                IT Sophomore & Freelancer
+              </p>
+
+              <!-- Introduction Text -->
+              <div class="space-y-4 text-gray-300 text-lg leading-relaxed mb-8">
+                <p>
+                  I'm an IT student and freelancer with a deep passion for technology that started when I was young. My curiosity grew from exploring skills, software, and digital tools on my own, turning that early interest into a drive to explore, experiment, and build.
+                </p>
+
+                <p>
+                  Now I'm exploring various areas of tech, and I'm discovering my real passion lies in cybersecurity, particularly in OSINT investigation. It&#8217;s a field that challenges me to think critically, stay curious, and continuously learn.
+                </p>
+
+                <p>
+                  I believe in taking initiative — when you see a problem or an opportunity, dive in, build, and experiment. Test your ideas, learn from mistakes, and keep improving along the way. Every step is a chance to grow and make a difference.
+                </p>
+              </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container" class="relative z-20"></div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
