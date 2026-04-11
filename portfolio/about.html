@@ -41,7 +41,7 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="flex items-center justify-center px-6 sm:px-6 md:px-8 pt-32 md:pt-32 pb-28 md:pb-28"
+        class="flex items-center justify-center px-6 sm:px-6 md:px-8 pt-32 md:pt-32 pb-10 md:pb-10"
         style="min-height: 100vh"
       >
         <div class="max-w-6xl w-full">
@@ -106,10 +106,59 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- Footer Container -->
-    <div id="footer-container" class="relative z-20"></div>
+      <!-- Where It All Started Section -->
+      <section
+        id="where-it-started"
+        class="flex items-center justify-center px-6 sm:px-6 md:px-8 py-28 md:py-32 relative z-10"
+      >
+        <div class="max-w-6xl w-full">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <!-- Left Column - Text Content -->
+            <div class="flex flex-col">
+              <h2 
+                class="font-bold text-white"
+                style="font-size: clamp(28px, 4vw, 44px);"
+              >
+                How It All Started
+              </h2>
+
+              <p class="text-blue-600 font-semibold text-lg mb-6">
+                Where my interest in tech began
+              </p>
+
+              <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+                <p>
+                  As a kid, I was naturally drawn to computers and the digital world, often spending time exploring, testing things, and trying to understand what was happening behind the screen. What began as simple exploration slowly turned into a genuine passion.
+                </p>
+
+                <p>
+                 That young kid in the photo was fascinated by how things worked and the endless possibilities of the digital world. From those early moments of curiosity and exploration, I’ve grown into someone who builds, creates, and pushes beyond what I thought was possible.
+                </p>
+
+                <p>
+                  It’s a reminder that every expert was once a beginner. Every skill and achievement  starts with curiosity and a willingness to learn. That same spirit drives me today, as I continue to stay curious, keep learning, and push myself to improve beyond what I already know.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column - Young Picture -->
+            <div class="flex flex-col items-center md:items-end">
+              <div class="relative w-full max-w-sm aspect-square rounded-2xl border-2 border-white/10 bg-linear-to-br from-blue-500/10 to-purple-500/10 overflow-hidden">
+                <img
+                  src="./assets/images/young-picture.jpg"
+                  alt="Young Sabriel Adriel"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Container -->
+      <div id="footer-container" class="relative z-20"></div>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>
