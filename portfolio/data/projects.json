@@ -28,5 +28,35 @@
     "source": "#",
     "category": ["graphic design", "uiux design"],
     "technologies": ["Figma", "Photoshop"]
+  },
+  {
+    "id": 4,
+    "title": "BetterTanay.org",
+    "description": "A community-run web portal designed to share local information, featuring a clean interface, user-friendly navigation, and accessibility across devices.",
+    "thumbnail": "./assets/images/betertanay-thumbnail.png",
+    "website": "#",
+    "source": "#",
+    "category": ["web development"],
+    "technologies": ["React", "TypeScript", "Tailwind", "VS Code"]
+  },
+  {
+    "id": 5,
+    "title": "Pililla Parish Jersey",
+    "description": "A client-requested jersey design created with a focus on clean visuals, balanced layout, and meaningful elements that represent the parish.",
+    "thumbnail": "./assets/images/betertanay-thumbnail.png",
+    "website": "#",
+    "source": "#",
+    "category": ["graphic design"],
+    "technologies": ["Photoshop"]
+  },
+  {
+    "id": 5,
+    "title": "BSP Unit No. 759 Jersey",
+    "description": "A unit jersey design for a school, developed with emphasis on simplicity, readability, and representing the identity and values of the group.",
+    "thumbnail": "./assets/images/betertanay-thumbnail.png",
+    "website": "#",
+    "source": "#",
+    "category": ["graphic design"],
+    "technologies": ["Photoshop"]
   }
 ]
