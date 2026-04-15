@@ -182,11 +182,16 @@ function initScrollAnimations() {
     });
   });
 
-  // Animate section cards with hover effects
+  // Animate section cards with hover effects (excluding certificates)
   const cardSelectors = ['a.flex', '.group.flex', '[class*="group"]'];
   const allCards = document.querySelectorAll(cardSelectors.join(', '));
   
   allCards.forEach(card => {
+    // Skip certificate cards (they're nested in animate-infinite-scroll containers)
+    if (card.closest('.animate-infinite-scroll')) {
+      return;
+    }
+
     // Add scroll animation
     gsap.from(card, {
       scrollTrigger: {
