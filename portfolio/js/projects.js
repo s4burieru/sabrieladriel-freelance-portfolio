@@ -47,7 +47,7 @@ function renderProjectsHTML(projects) {
           alt="${project.title}" 
           class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
         />
-        <div class="absolute inset-0 group-hover:bg-black/50 transition"></div>
+        <div class="absolute inset-0"></div>
         
         <!-- Project Link Buttons -->
         <div class="absolute top-3 sm:top-4 right-3 sm:right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
