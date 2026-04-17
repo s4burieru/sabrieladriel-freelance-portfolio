@@ -58,7 +58,7 @@ function renderProjectsHTML(projects) {
       
       <!-- Project Info -->
       <div class="flex-1 flex flex-col p-4 sm:p-6 md:p-7">
-        <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">${project.title}</h3>
+        <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 group-hover:text-blue-600 transition">${project.title}</h3>
         <p class="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8 flex-1">
           ${project.description}
         </p>
