@@ -7,6 +7,7 @@
     "excerpt": "This is my first blog post! I will be sharing my thoughts, experiences, and insights on various topics related to personal growth, tech, and more. Stay tuned for exciting content!",
     "image": "./assets/images/blog-post-1.jpg",
     "tags": ["Personal", "Learning"],
-    "author": "Sabriel Adriel San Agustin"
+    "author": "Sabriel Adriel San Agustin",
+    "content": "<p>Hi there! I'm Sabriel, an IT student, aspiring developer, and cybersecurity enthusiast. I'm driven by curiosity and a love for creating. There's something exciting about taking an idea, turning it into a working project, and pushing myself to solve problems I didn't expect. I've been meaning to start this blog as a space to share what I'm learning, creating, and exploring along the way.</br></br></p><p>Here's what you can expect to see here:</p><ul><li>• Experiments and small projects I'm working on, from web tools to design experiments</li><li>• Stories from learning new technologies, tackling coding challenges, or diving into cybersecurity explorations</li><li>• Tutorials, walkthroughs, and tips that I hope can help someone else along their journey</li><li>• Personal reflections on learning tech, growing as a developer, and navigating cybersecurity</li></ul><blockquote style=\"border-left: 4px solid #3b82f6; padding-left: 1rem; margin: 2rem 0; font-style: italic; color: #9ca3af;\"><p>I'm still figuring things out, but sharing my journey helps me grow — and maybe inspires someone else along the way.</p></blockquote>"
   }
 ]

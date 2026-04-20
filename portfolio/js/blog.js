@@ -1,3 +1,9 @@
+// Get URL parameters
+function getUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  return params;
+}
+
 // Load blog posts from JSON
 async function loadBlogPostsData() {
   try {
@@ -9,6 +15,81 @@ async function loadBlogPostsData() {
     return [];
   }
 }
+
+// Render single blog post
+async function renderSingleBlogPost() {
+  const params = getUrlParams();
+  const postId = parseInt(params.get('id'));
+  const posts = await loadBlogPostsData();
+  const post = posts.find(p => p.id === postId);
+  
+  if (!post) {
+    window.location.href = 'blog.html';
+    return;
+  }
+
+  const container = document.getElementById('single-blog-post-container');
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="w-full">
+      <!-- Post Header -->
+      <div class="mb-8 md:mb-12">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
+          ${post.title}
+        </h1>
+        
+        <!-- Post Meta Info -->
+        <div class="flex flex-wrap items-center gap-4 mb-8 text-sm md:text-base text-gray-400">
+          <div class="flex items-center gap-2">
+            <img src="./assets/icons/calendar.svg" alt="calendar" class="w-4 h-4">
+            <span>${post.date}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/icons/clock.svg" alt="clock" class="w-4 h-4">
+            <span>${post.readTime} min read</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span>By ${post.author}</span>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          ${post.tags.map(tag => `<span class="inline-block px-3 py-1 text-xs font-medium bg-white/10 border border-white/20 rounded-full text-white">${tag}</span>`).join('')}
+        </div>
+      </div>
+
+      <!-- Featured Image -->
+      <div class="w-full h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden mb-12 md:mb-16">
+        <img 
+          src="${post.image}" 
+          alt="${post.title}" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Post Content -->
+      <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed mb-12 text-lg md:text-xl">
+        ${post.content}
+      </div>
+
+      <!-- Content Divider -->
+      <div class="w-full h-px bg-gray-700 my-12 md:my-16"></div>
+
+      <!-- Author Info -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+        <h3 class="text-xl font-bold text-white mb-2">About the Author</h3>
+        <p class="text-gray-400">${post.author}</p>
+      </div>
+    </div>
+  `;
+
+  // Show single post section and hide grid
+  document.getElementById('single-blog-post').classList.remove('hidden');
+  document.getElementById('all-blog-posts').classList.add('hidden');
+}
+
 
 // Render blog posts in the featured blog section (homepage)
 async function renderFeaturedBlogPosts() {
@@ -124,13 +205,21 @@ async function renderAllBlogPosts() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-  // Load featured posts if on homepage
-  if (document.getElementById('blog-posts-container')) {
-    renderFeaturedBlogPosts();
-  }
-  
-  // Load all posts if on blog page
-  if (document.getElementById('all-blog-posts-container')) {
-    renderAllBlogPosts();
+  const params = getUrlParams();
+  const postId = params.get('id');
+
+  // If an id parameter exists, show single post view
+  if (postId) {
+    renderSingleBlogPost();
+  } else {
+    // Load featured posts if on homepage
+    if (document.getElementById('blog-posts-container')) {
+      renderFeaturedBlogPosts();
+    }
+    
+    // Load all posts if on blog page
+    if (document.getElementById('all-blog-posts-container')) {
+      renderAllBlogPosts();
+    }
   }
 });
