@@ -88,6 +88,7 @@ async function renderSingleBlogPost() {
   // Show single post section and hide grid
   document.getElementById('single-blog-post').classList.remove('hidden');
   document.getElementById('all-blog-posts').classList.add('hidden');
+  document.getElementById('hero').classList.add('hidden');
 }
 
 
