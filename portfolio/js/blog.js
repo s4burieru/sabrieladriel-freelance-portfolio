@@ -89,6 +89,9 @@ async function renderSingleBlogPost() {
   document.getElementById('single-blog-post').classList.remove('hidden');
   document.getElementById('all-blog-posts').classList.add('hidden');
   document.getElementById('hero').classList.add('hidden');
+  
+  // Show back to posts link
+  document.getElementById('back-to-posts-link').classList.remove('hidden');
 }
 
 
@@ -112,11 +115,11 @@ async function renderFeaturedBlogPosts() {
       </div>
       
       <!-- Blog Post Info -->
-      <div class="flex-1 flex flex-col p-4 sm:p-6 md:p-7">
+      <div class="flex-1 flex flex-col px-6 sm:px-6 md:px-6 py-6 sm:py-6 md:py-6">
         <!-- Date and Read Time -->
         <div class="flex items-center gap-4 mb-3 sm:mb-4 text-xs sm:text-sm text-gray-500">
           <span class="flex items-center gap-1">
-            <img src="./assets/icons/calendar.svg" alt="calendar" class="w-3.8 h-3.8"> ${post.date}
+            <img src="./assets/icons/calendar.svg" alt="calendar" class="w-4 h-4"> ${post.date}
           </span>
           <span class="flex items-center gap-1">
             <img src="./assets/icons/clock.svg" alt="clock" class="w-4 h-4"> ${post.readTime} min read
@@ -168,11 +171,11 @@ async function renderAllBlogPosts() {
       </div>
       
       <!-- Blog Post Info -->
-      <div class="flex-1 flex flex-col p-4 sm:p-6 md:p-7">
+      <div class="flex-1 flex flex-col px-6 sm:px-6 md:px-6 py-6 sm:py-6 md:py-6">
         <!-- Date and Read Time -->
         <div class="flex items-center gap-4 mb-3 sm:mb-4 text-xs sm:text-sm text-gray-500">
           <span class="flex items-center gap-1">
-            <img src="./assets/icons/calendar.svg" alt="calendar" class="w-3.8 h-3.8"> ${post.date}
+            <img src="./assets/icons/calendar.svg" alt="calendar" class="w-4 h-4"> ${post.date}
           </span>
           <span class="flex items-center gap-1">
             <img src="./assets/icons/clock.svg" alt="clock" class="w-4 h-4"> ${post.readTime} min read
