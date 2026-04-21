@@ -86,12 +86,12 @@ async function renderSingleBlogPost() {
   `;
 
   // Show single post section and hide grid
-  document.getElementById('single-blog-post').classList.remove('hidden');
+  document.getElementById('single-blog-post').style.display = 'flex';
   document.getElementById('all-blog-posts').classList.add('hidden');
   document.getElementById('hero').classList.add('hidden');
   
   // Show back to posts link
-  document.getElementById('back-to-posts-link').classList.remove('hidden');
+  document.getElementById('back-to-posts-link').style.display = 'flex';
 }
 
 
