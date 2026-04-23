@@ -192,6 +192,11 @@ function initScrollAnimations() {
       return;
     }
 
+    // Skip navbar logo
+    if (card.closest('#main-navbar')) {
+      return;
+    }
+
     // Add scroll animation
     gsap.from(card, {
       scrollTrigger: {
