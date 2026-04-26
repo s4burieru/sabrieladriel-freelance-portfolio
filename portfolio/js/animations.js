@@ -187,8 +187,8 @@ function initScrollAnimations() {
   const allCards = document.querySelectorAll(cardSelectors.join(', '));
   
   allCards.forEach(card => {
-    // Skip certificate cards (they're nested in animate-infinite-scroll containers)
-    if (card.closest('.animate-infinite-scroll')) {
+    // Skip certificate cards (they're nested in the carousel)
+    if (card.closest('#certifications-carousel')) {
       return;
     }
 
@@ -229,6 +229,9 @@ function initScrollAnimations() {
     });
   });
 }
+
+// Carousel animations are now handled by CSS
+// See animate-infinite-scroll class in css/input.css
 
 // Main initialization
 document.addEventListener('DOMContentLoaded', () => {

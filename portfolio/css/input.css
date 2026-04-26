@@ -41,7 +41,7 @@
 }
 
 .animate-infinite-scroll {
-  animation: infiniteScroll 30s linear infinite !important;
+  animation: infiniteScroll 60s linear infinite !important;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
