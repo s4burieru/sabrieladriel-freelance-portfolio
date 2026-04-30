@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     initHeroAnimations();
     initProfileImageAnimation();
-    initScrollAnimations();
+    initScrollAnimations();z
   }, 50);
 });
 
