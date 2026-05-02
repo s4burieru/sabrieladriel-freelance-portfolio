@@ -1,6 +1,3 @@
-// ==========================================
-// About Page JavaScript
-// ==========================================
 
 document.addEventListener('DOMContentLoaded', function() {
   initializeInfiniteScroll();
