@@ -188,7 +188,7 @@ function initScrollAnimations() {
   
   allCards.forEach(card => {
     // Skip certificate cards (they're nested in the carousel)
-    if (card.closest('#certifications-carousel')) {
+    if (card.closest('#certifications')) {
       return;
     }
 
