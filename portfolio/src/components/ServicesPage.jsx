@@ -342,8 +342,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Social Graphics</h3>
                 <p className="text-sm text-gray-500 mb-4">Per design</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱500</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-cyan-500">₱500+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$9 USD
@@ -364,8 +363,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Branding Kit</h3>
                 <p className="text-sm text-gray-500 mb-4">Complete brand identity</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱2,500</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-cyan-500">₱2,500+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$43 USD
@@ -386,8 +384,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">UI Design</h3>
                 <p className="text-sm text-gray-500 mb-4">Screen designs & mockups</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱5,000</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-cyan-500">₱5,000+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$86 USD
@@ -493,8 +490,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Short Form</h3>
                 <p className="text-sm text-gray-500 mb-4">Up to 60 seconds</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱800</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-pink-500">₱800+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$14 USD
@@ -515,8 +511,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Long Form</h3>
                 <p className="text-sm text-gray-500 mb-4">5-15 minutes</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱2,000</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-pink-500">₱2,000+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$34 USD
@@ -537,8 +532,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Custom</h3>
                 <p className="text-sm text-gray-500 mb-4">Tailored to your needs</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱3,000</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-pink-500">₱3,000+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$52 USD
@@ -658,8 +652,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Basic OSINT Research</h3>
                 <p className="text-sm text-gray-500 mb-4">1 investigation target</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱1,500</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-green-500">₱1,500+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$26 USD
@@ -680,8 +673,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Business Research</h3>
                 <p className="text-sm text-gray-500 mb-4">Company & domain research</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱3,000</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-green-500">₱3,000+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$52 USD
@@ -702,8 +694,7 @@ const servicesData = {
                 <h3 className="text-xl font-bold text-white mb-1">Custom Research</h3>
                 <p className="text-sm text-gray-500 mb-4">Custom investigation scope</p>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱4,500</span>
-                  <span className="text-gray-500 text-sm">+</span>
+                  <span className="text-4xl font-bold text-green-500">₱4,500+</span>
                 </div>
                 <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   ~$78 USD

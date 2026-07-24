@@ -15,6 +15,7 @@ const techItems = [
   { name: 'WordPress', icon: '/assets/tech-icons/wordpress.svg', w: 'w-10', h: 'h-10' },
   { name: 'XAMPP', icon: '/assets/tech-icons/xampp.svg', w: 'w-8', h: 'h-8' },
   { name: 'Photoshop', icon: '/assets/tech-icons/adobe-photoshop.svg', w: 'w-10', h: 'h-10' },
+  { name: 'Illustrator', icon: '/assets/tech-icons/adobe-illustrator.svg', w: 'w-10', h: 'h-10' },
   { name: 'Figma', icon: '/assets/tech-icons/figma.svg', w: 'w-8', h: 'h-8' },
   { name: 'CapCut', icon: '/assets/tech-icons/capcut.svg', w: 'w-8', h: 'h-8' },
   { name: 'Kali Linux', icon: '/assets/tech-icons/kali-linux.svg', w: 'w-10', h: 'h-10' },

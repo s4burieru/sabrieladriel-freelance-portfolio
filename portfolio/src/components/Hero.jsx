@@ -73,7 +73,7 @@ export default function Hero() {
             <span className="animate-blink">|</span>
           </div>
 
-          <p className="text-sm sm:text-lg md:text-xl text-gray-400 mb-4 sm:mb-10 leading-relaxed max-w-xl text-center md:text-left">
+          <p className="text-sm sm:text-lg md:text-xl text-gray-400 mb-4 sm:mb-10 md:mb-12 leading-relaxed max-w-xl text-center md:text-left">
             IT student and freelancer who is passionate about technology. I
             enjoy building, breaking, and solving the problems I encounter.
           </p>
@@ -106,18 +106,12 @@ export default function Hero() {
         </div>
 
         {/* Right Image */}
-        <div className="flex flex-col items-center gap-4 sm:gap-8 md:gap-16 lg:gap-20 order-first md:order-last md:col-span-1 self-start mt-2 md:mt-4">
+        <div className="flex flex-col items-center gap-4 sm:gap-8 md:gap-16 lg:gap-20 order-first md:order-last md:col-span-1 self-start mt-2 md:mt-6">
           <div className="relative">
             <div className="relative w-28 sm:w-40 md:w-48 h-28 sm:h-40 md:h-48 rounded-full border-4 border-white overflow-hidden bg-gray-800 flex items-center justify-center group cursor-pointer">
               <img
                 src="/assets/images/hero-picture.jpeg"
                 alt="Sabriel Adriel"
-                className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-              />
-              <img
-                src="/assets/images/my-picture-2.png"
-                alt="Sabriel Adriel"
-                className="w-full h-full object-cover absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
               />
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 export default function FeaturedProjects() {
   const [projects, setProjects] = useState([]);
@@ -6,21 +6,25 @@ export default function FeaturedProjects() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    fetch('/data/projects.json')
+    fetch("/data/projects.json")
       .then((res) => res.json())
       .then((data) => setProjects(data.slice(0, 3)))
-      .catch((err) => console.error('Error loading projects:', err));
+      .catch((err) => console.error("Error loading projects:", err));
   }, []);
 
   // Close touched card when tapping outside
   useEffect(() => {
     const handleClick = (e) => {
-      if (touchedId !== null && sectionRef.current && !sectionRef.current.contains(e.target)) {
+      if (
+        touchedId !== null &&
+        sectionRef.current &&
+        !sectionRef.current.contains(e.target)
+      ) {
         setTouchedId(null);
       }
     };
-    document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
   }, [touchedId]);
 
   return (
@@ -77,7 +81,7 @@ export default function FeaturedProjects() {
                     key={project.id}
                     onClick={() => setTouchedId(isTouched ? null : project.id)}
                     className={`group flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl backdrop-blur-lg overflow-hidden cursor-pointer transition hover:border-white/30 hover:bg-white/10 ${
-                      isTouched ? 'border-white/30 bg-white/10' : ''
+                      isTouched ? "border-white/30 bg-white/10" : ""
                     }`}
                   >
                     {/* Thumbnail */}
@@ -86,22 +90,22 @@ export default function FeaturedProjects() {
                         src={project.thumbnail}
                         alt={project.title}
                         className={`w-full h-full object-cover transition duration-300 group-hover:scale-105 ${
-                          isTouched ? 'scale-105' : ''
+                          isTouched ? "scale-105" : ""
                         }`}
                       />
                       <div
                         className={`absolute inset-0 transition duration-300 group-hover:bg-black/50 ${
-                          isTouched ? 'bg-black/50' : ''
+                          isTouched ? "bg-black/50" : ""
                         }`}
                       ></div>
 
                       {/* Project Link Buttons */}
                       <div
                         className={`absolute top-3 sm:top-4 right-3 sm:right-4 flex gap-2 transition duration-300 flex-wrap opacity-0 group-hover:opacity-100 ${
-                          isTouched ? 'opacity-100' : ''
+                          isTouched ? "opacity-100" : ""
                         }`}
                       >
-                        {project.website && project.website !== '#' && (
+                        {project.website && project.website !== "#" && (
                           <a
                             href={project.website}
                             className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-white text-black rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-100 transition shadow-lg"
@@ -114,7 +118,7 @@ export default function FeaturedProjects() {
                             />
                           </a>
                         )}
-                        {project.source && project.source !== '#' && (
+                        {project.source && project.source !== "#" && (
                           <a
                             href={project.source}
                             className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-white text-black rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-100 transition shadow-lg"
@@ -127,7 +131,7 @@ export default function FeaturedProjects() {
                             />
                           </a>
                         )}
-                        {project.figmaLink && project.figmaLink !== '#' && (
+                        {project.figmaLink && project.figmaLink !== "#" && (
                           <a
                             href={project.figmaLink}
                             className="px-5 sm:px-6 py-2.5 sm:py-3 flex items-center justify-center bg-white text-black rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-100 transition shadow-lg"
@@ -136,24 +140,25 @@ export default function FeaturedProjects() {
                             Figma
                           </a>
                         )}
-                        {project.behanceLink &&
-                          project.behanceLink !== '#' && (
-                            <a
-                              href={project.behanceLink}
-                              className="px-5 sm:px-6 py-2.5 sm:py-3 flex items-center justify-center bg-white text-black rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-100 transition shadow-lg"
-                              title="View Behance"
-                            >
-                              Behance
-                            </a>
-                          )}
+                        {project.behanceLink && project.behanceLink !== "#" && (
+                          <a
+                            href={project.behanceLink}
+                            className="px-5 sm:px-6 py-2.5 sm:py-3 flex items-center justify-center bg-white text-black rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-100 transition shadow-lg"
+                            title="View Behance"
+                          >
+                            Behance
+                          </a>
+                        )}
                       </div>
                     </div>
 
                     {/* Project Info */}
                     <div className="flex-1 flex flex-col p-4 sm:p-6 md:p-7">
                       <h3
-                        className={`text-lg sm:text-xl font-bold transition text-white group-hover:text-blue-600 ${
-                          isTouched ? 'text-blue-600' : ''
+                        className={`text-lg sm:text-xl font-bold transition mb-2 sm:mb-3 ${
+                          isTouched
+                            ? "text-blue-700"
+                            : "text-white group-hover:text-blue-700"
                         }`}
                       >
                         {project.title}
