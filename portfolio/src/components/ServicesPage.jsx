@@ -21,13 +21,13 @@ function convertToUSD(phpStr) {
 
 const servicesData = {
   "web-dev": {
-    title: "Frontend Website Development",
+    title: "Website Development",
     heroDesc: "Build fast, modern, responsive websites.",
     badge: "FRONTEND DEVELOPMENT",
     summary:
       "Responsive websites built with a clear process, polished visuals, and a focus on launch-ready results.",
     highlights: [
-      "Custom Webdsite Design",
+      "Custom Website Design",
       "Fast and Responsive",
       "Built for Business Growth",
     ],
@@ -123,143 +123,6 @@ const servicesData = {
             </div>
           </div>
         </div>
-
-        {/* Pricing */}
-        <div>
-          <div className="flex items-center gap-3 mb-7">
-            <span className="w-1 h-7 bg-blue-700 rounded-full shrink-0"></span>
-            <h2 className="text-2xl font-bold text-white">Pricing Plans</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Starter</h3>
-                <p className="text-sm text-gray-500 mb-4">Perfect for getting started</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-blue-700">₱5,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$80 USD
-                </div>
-                <ul className="space-y-3.5 text-sm text-gray-400 mb-8">
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>1 Page Website</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Fully Responsive Design</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Contact Form Integration</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Basic SEO Setup</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-blue-500/20 bg-blue-500/5 text-blue-700 text-center text-sm font-medium hover:bg-blue-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Professional</h3>
-                <p className="text-sm text-gray-500 mb-4">Best value for growing brands</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-blue-700">₱12,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$194 USD
-                </div>
-                <ul className="space-y-3.5 text-sm text-gray-400 mb-8">
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Up to 5 Pages</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Fully Responsive Design</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Custom Animations</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Contact Form Integration</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Image Gallery</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <span>Deployment Assistance</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-blue-500/20 bg-blue-500/5 text-blue-700 text-center text-sm font-medium hover:bg-blue-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.023 6.023 0 01-2.77.896m0 0a6.023 6.023 0 01-2.77-.896m0 0A5.964 5.964 0 017.73 9.728"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Premium</h3>
-                <p className="text-sm text-gray-500 mb-4">For complex, large-scale projects</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-blue-700">₱20,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$323 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">
-                  For larger projects with custom requirements. Get a tailored solution built to your exact specifications.
-                </p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-blue-500/20 bg-blue-500/5 text-blue-700 text-center text-sm font-medium hover:bg-blue-500/20 hover:text-white transition-all duration-300">
-                  Contact Me
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </>
     ),
   },
@@ -322,79 +185,6 @@ const servicesData = {
                   <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full shrink-0"></span> Adobe Illustrator</li>
                   <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full shrink-0"></span> Canva</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing */}
-        <div className="mb-14">
-          <div className="flex items-center gap-3 mb-7">
-            <span className="w-1 h-7 bg-cyan-500 rounded-full shrink-0"></span>
-            <h2 className="text-2xl font-bold text-white">Pricing Plans</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.053 3H5a2 2 0 00-2 2v4a2 2 0 002 2h4a2 2 0 002-2V5a2 2 0 00-2-2zM19.053 3h-4a2 2 0 00-2 2v4a2 2 0 002 2h4a2 2 0 002-2V5a2 2 0 00-2-2zM9.053 13H5a2 2 0 00-2 2v4a2 2 0 002 2h4a2 2 0 002-2v-4a2 2 0 00-2-2zM19.053 13h-4a2 2 0 00-2 2v4a2 2 0 002 2h4a2 2 0 002-2v-4a2 2 0 00-2-2z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Social Graphics</h3>
-                <p className="text-sm text-gray-500 mb-4">Per design</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱500+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$9 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Single design project for social media graphics.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-cyan-500/20 bg-cyan-500/5 text-cyan-500 text-center text-sm font-medium hover:bg-cyan-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Branding Kit</h3>
-                <p className="text-sm text-gray-500 mb-4">Complete brand identity</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱2,500+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$43 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Logo + Color Palette + Typography for your brand.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-cyan-500/20 bg-cyan-500/5 text-cyan-500 text-center text-sm font-medium hover:bg-cyan-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">UI Design</h3>
-                <p className="text-sm text-gray-500 mb-4">Screen designs & mockups</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-cyan-500">₱5,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$86 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Landing page or app screens designed in Figma.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-cyan-500/20 bg-cyan-500/5 text-cyan-500 text-center text-sm font-medium hover:bg-cyan-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
               </div>
             </div>
           </div>
@@ -470,79 +260,6 @@ const servicesData = {
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-pink-500 rounded-full shrink-0"></span> CapCut</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing */}
-        <div className="mb-14">
-          <div className="flex items-center gap-3 mb-7">
-            <span className="w-1 h-7 bg-pink-500 rounded-full shrink-0"></span>
-            <h2 className="text-2xl font-bold text-white">Pricing Plans</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.97 1.97a.75.75 0 011.06 0l3.5 3.5a.75.75 0 01-1.06 1.06l-2.22-2.22V9.5a.75.75 0 01-1.5 0V4.31L9.47 6.53a.75.75 0 01-1.06-1.06l3.5-3.5zM9.75 13a.75.75 0 01.75.75v3.94l2.22-2.22a.75.75 0 111.06 1.06l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 111.06-1.06l2.22 2.22V13.75a.75.75 0 01.75-.75z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Short Form</h3>
-                <p className="text-sm text-gray-500 mb-4">Up to 60 seconds</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱800+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$14 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Quick edits for Reels, TikTok, and social clips.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-pink-500/20 bg-pink-500/5 text-pink-500 text-center text-sm font-medium hover:bg-pink-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M12 18.75H4.5a2.25 2.25 0 01-2.25-2.25V9m12.84 3.75a2.25 2.25 0 012.42 3.29M12 18.75a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 00.75 7.5v9a2.25 2.25 0 002.25 2.25h9z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Long Form</h3>
-                <p className="text-sm text-gray-500 mb-4">5-15 minutes</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱2,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$34 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Ideal for YouTube videos and longer content.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-pink-500/20 bg-pink-500/5 text-pink-500 text-center text-sm font-medium hover:bg-pink-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.023 6.023 0 01-2.77.896m0 0a6.023 6.023 0 01-2.77-.896m0 0A5.964 5.964 0 017.73 9.728"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Custom</h3>
-                <p className="text-sm text-gray-500 mb-4">Tailored to your needs</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-pink-500">₱3,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$52 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">For specialized projects with custom requirements.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-pink-500/20 bg-pink-500/5 text-pink-500 text-center text-sm font-medium hover:bg-pink-500/20 hover:text-white transition-all duration-300">
-                  Contact Me
-                </a>
               </div>
             </div>
           </div>
@@ -632,79 +349,6 @@ const servicesData = {
                   <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-green-500 rounded-full shrink-0"></span> Wayback Machine</li>
                   <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-green-500 rounded-full shrink-0"></span> WHOIS & DNS Lookup</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing */}
-        <div className="mb-14">
-          <div className="flex items-center gap-3 mb-7">
-            <span className="w-1 h-7 bg-green-500 rounded-full shrink-0"></span>
-            <h2 className="text-2xl font-bold text-white">Pricing Plans</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Basic OSINT Research</h3>
-                <p className="text-sm text-gray-500 mb-4">1 investigation target</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱1,500+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$26 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Single investigation target with full report.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-green-500/20 bg-green-500/5 text-green-500 text-center text-sm font-medium hover:bg-green-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Business Research</h3>
-                <p className="text-sm text-gray-500 mb-4">Company & domain research</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱3,000+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$52 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">In-depth company and domain investigation.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-green-500/20 bg-green-500/5 text-green-500 text-center text-sm font-medium hover:bg-green-500/20 hover:text-white transition-all duration-300">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300 flex flex-col">
-              <div>
-                <div className="w-12 h-12 mb-5 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.023 6.023 0 01-2.77.896m0 0a6.023 6.023 0 01-2.77-.896m0 0A5.964 5.964 0 017.73 9.728"/></svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Custom Research</h3>
-                <p className="text-sm text-gray-500 mb-4">Custom investigation scope</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold text-green-500">₱4,500+</span>
-                </div>
-                <div className="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
-                  ~$78 USD
-                </div>
-                <p className="text-sm text-gray-400 mb-8 leading-relaxed">Tailored investigation to your specific needs.</p>
-              </div>
-              <div className="mt-auto">
-                <a href="/contact" className="block w-full py-3 px-6 rounded-xl border border-green-500/20 bg-green-500/5 text-green-500 text-center text-sm font-medium hover:bg-green-500/20 hover:text-white transition-all duration-300">
-                  Contact Me
-                </a>
               </div>
             </div>
           </div>

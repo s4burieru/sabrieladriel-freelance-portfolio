@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import SoftAurora from './SoftAurora';
 
 const roles = [
   "Aspiring Software Engineer",
@@ -52,10 +53,30 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex items-center justify-center px-4 sm:px-6 md:px-8 pt-20 md:pt-12 lg:pt-0"
+      className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 pt-20 md:pt-12 lg:pt-0 overflow-hidden"
       style={{ minHeight: '100dvh' }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 md:gap-12 items-center max-w-6xl w-full">
+      {/* Aurora Background */}
+      <div className="absolute inset-0 z-0">
+        <SoftAurora
+          speed={0.6}
+          scale={1.5}
+          brightness={0.8}
+          color1="#6366f1"
+          color2="#6366f1"
+          noiseFrequency={2.5}
+          noiseAmplitude={1.0}
+          bandHeight={0.55}
+          bandSpread={1.3}
+          octaveDecay={0.1}
+          layerOffset={0}
+          colorSpeed={1.0}
+          enableMouseInteraction={true}
+          mouseInfluence={0.25}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 md:gap-12 items-center max-w-6xl w-full relative z-10">
         {/* Left Content */}
         <div className="md:col-span-2 flex flex-col items-center md:items-start">
           <div className="inline-block bg-white/10 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full mb-3 sm:mb-6 border border-white/10 backdrop-blur-lg shadow-sm hover:border-white/40 hover:bg-white/20 transition">
