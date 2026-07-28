@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import { Renderer, Program, Triangle, Mesh } from 'ogl';
 import './LightRays.css';
 
@@ -26,7 +26,7 @@ const getAnchorAndDir = (origin, w, h) => {
       return { anchor: [0.5 * w, (1 + outside) * h], dir: [0, -1] };
     case 'bottom-right':
       return { anchor: [w, (1 + outside) * h], dir: [0, -1] };
-    default: // "top-center"
+    default:
       return { anchor: [0.5 * w, -outside * h], dir: [0, 1] };
   }
 };
@@ -53,38 +53,14 @@ const LightRays = ({
   const smoothMouseRef = useRef({ x: 0.5, y: 0.5 });
   const animationIdRef = useRef(null);
   const meshRef = useRef(null);
-  const cleanupFunctionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const observerRef = useRef(null);
+  const loopRef = useRef(null);
+  const isVisibleRef = useRef(true);
+  const initCompleteRef = useRef(false);
 
+  // Initialize WebGL once
   useEffect(() => {
-    if (!containerRef.current) return;
-
-    observerRef.current = new IntersectionObserver(
-      entries => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    observerRef.current.observe(containerRef.current);
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-        observerRef.current = null;
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible || !containerRef.current) return;
-
-    if (cleanupFunctionRef.current) {
-      cleanupFunctionRef.current();
-      cleanupFunctionRef.current = null;
-    }
+    if (!containerRef.current || initCompleteRef.current) return;
+    initCompleteRef.current = true;
 
     const initializeWebGL = async () => {
       if (!containerRef.current) return;
@@ -259,7 +235,7 @@ void main() {
         uniforms.rayDir.value = dir;
       };
 
-      const loop = t => {
+      loopRef.current = (t) => {
         if (!rendererRef.current || !uniformsRef.current || !meshRef.current) {
           return;
         }
@@ -277,7 +253,7 @@ void main() {
 
         try {
           renderer.render({ scene: mesh });
-          animationIdRef.current = requestAnimationFrame(loop);
+          animationIdRef.current = requestAnimationFrame(loopRef.current);
         } catch (error) {
           console.warn('WebGL rendering error:', error);
           return;
@@ -286,48 +262,41 @@ void main() {
 
       window.addEventListener('resize', updatePlacement);
       updatePlacement();
-      animationIdRef.current = requestAnimationFrame(loop);
 
-      cleanupFunctionRef.current = () => {
-        if (animationIdRef.current) {
-          cancelAnimationFrame(animationIdRef.current);
-          animationIdRef.current = null;
-        }
-
-        window.removeEventListener('resize', updatePlacement);
-
-        if (renderer) {
-          try {
-            const canvas = renderer.gl.canvas;
-            const loseContextExt = renderer.gl.getExtension('WEBGL_lose_context');
-            if (loseContextExt) {
-              loseContextExt.loseContext();
-            }
-
-            if (canvas && canvas.parentNode) {
-              canvas.parentNode.removeChild(canvas);
-            }
-          } catch (error) {
-            console.warn('Error during WebGL cleanup:', error);
-          }
-        }
-
-        rendererRef.current = null;
-        uniformsRef.current = null;
-        meshRef.current = null;
-      };
+      // Start animation if visible
+      if (isVisibleRef.current) {
+        animationIdRef.current = requestAnimationFrame(loopRef.current);
+      }
     };
 
     initializeWebGL();
 
     return () => {
-      if (cleanupFunctionRef.current) {
-        cleanupFunctionRef.current();
-        cleanupFunctionRef.current = null;
+      if (animationIdRef.current) {
+        cancelAnimationFrame(animationIdRef.current);
+        animationIdRef.current = null;
+      }
+      if (rendererRef.current) {
+        try {
+          const renderer = rendererRef.current;
+          const canvas = renderer.gl.canvas;
+          const loseContextExt = renderer.gl.getExtension('WEBGL_lose_context');
+          if (loseContextExt) {
+            loseContextExt.loseContext();
+          }
+          if (canvas && canvas.parentNode) {
+            canvas.parentNode.removeChild(canvas);
+          }
+        } catch (error) {
+          console.warn('Error during WebGL cleanup:', error);
+        }
+        rendererRef.current = null;
+        uniformsRef.current = null;
+        meshRef.current = null;
+        loopRef.current = null;
       }
     };
   }, [
-    isVisible,
     raysOrigin,
     raysColor,
     raysSpeed,
@@ -342,6 +311,36 @@ void main() {
     distortion
   ]);
 
+  // Pause/resume animation loop based on visibility — NO re-initialization
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        const entry = entries[0];
+        const nowVisible = entry.isIntersecting;
+        isVisibleRef.current = nowVisible;
+
+        if (nowVisible && loopRef.current && !animationIdRef.current) {
+          // Resume animation
+          animationIdRef.current = requestAnimationFrame(loopRef.current);
+        } else if (!nowVisible && animationIdRef.current) {
+          // Pause animation
+          cancelAnimationFrame(animationIdRef.current);
+          animationIdRef.current = null;
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  // Update uniforms when props change (separate effect — only if initialized)
   useEffect(() => {
     if (!uniformsRef.current || !containerRef.current || !rendererRef.current) return;
 
