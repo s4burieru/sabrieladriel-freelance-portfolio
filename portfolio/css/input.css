@@ -49,6 +49,24 @@
   -webkit-perspective: 1000px;
 }
 
+/* ===== Fix White Background Flashes on Mobile ===== */
+
+/* Prevent white background on body/html during elastic/overscroll on mobile */
+html {
+  background-color: #000000;
+  min-height: 100%;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100dvh;
+}
+
+/* Prevent tap highlight color on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* ===== Mobile Responsiveness Overrides ===== */
 
 /* Prevent horizontal overflow on all devices */
