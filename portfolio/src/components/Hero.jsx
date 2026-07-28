@@ -53,7 +53,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 pt-20 md:pt-12 lg:pt-0 overflow-hidden"
+      className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 pt-20 md:pt-12 lg:pt-0"
       style={{ minHeight: '100dvh' }}
     >
       {/* Light Rays Background */}
