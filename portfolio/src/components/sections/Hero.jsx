@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
-import LightRays from './LightRays';
+import { useState, useEffect, useRef, useCallback } from "react";
+import LightRays from "../effects/LightRays";
+import { SOCIAL_LINKS } from "../../data/socialLinks";
 
 const roles = [
   "Aspiring Software Engineer",
@@ -12,7 +13,7 @@ const roles = [
 ];
 
 export default function Hero() {
-  const [displayedText, setDisplayedText] = useState('');
+  const [displayedText, setDisplayedText] = useState("");
   const roleIndexRef = useRef(0);
   const charIndexRef = useRef(0);
   const isDeletingRef = useRef(false);
@@ -54,7 +55,7 @@ export default function Hero() {
     <section
       id="hero"
       className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 pt-20 md:pt-12 lg:pt-0"
-      style={{ minHeight: '100dvh' }}
+      style={{ minHeight: "100dvh" }}
     >
       {/* Light Rays Background */}
       <div className="absolute inset-0 z-0">
@@ -97,7 +98,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-3 mb-6 sm:mb-12 items-stretch sm:items-center w-full sm:w-auto justify-center md:justify-start">
             <a
-              href="mailto: savvv.business@gmail.com"
+              href="mailto:savvv.business@gmail.com"
               className="hero-cta-no-hover w-full sm:w-40 px-3 sm:px-5 h-10 sm:h-14 border border-white/10 text-white rounded-full backdrop-blur-lg bg-white/10 shadow-sm flex items-center justify-center text-xs sm:text-base gap-2"
             >
               <img
@@ -134,61 +135,20 @@ export default function Hero() {
 
           {/* Social Icons */}
           <div className="flex gap-1.5 sm:gap-3 justify-center flex-wrap mt-2">
-            <a
-              href="https://github.com/s4burieru"
-              className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
-              title="GitHub"
-            >
-              <img
-                src="/assets/social-icons/Github--Streamline-Feather.svg"
-                alt="GitHub"
-                className="w-3.5 sm:w-5 h-3.5 sm:h-5"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sabrieladriel/"
-              className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
-              title="LinkedIn"
-            >
-              <img
-                src="/assets/social-icons/Linkedin--Streamline-Feather.svg"
-                alt="LinkedIn"
-                className="w-3.5 sm:w-5 h-3.5 sm:h-5"
-              />
-            </a>
-            <a
-              href="https://behance.net/sabrieladriel"
-              className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
-              title="Behance"
-            >
-              <img
-                src="/assets/social-icons/Behance-Tag--Streamline-Iconoir.svg"
-                alt="Behance"
-                className="w-3.5 sm:w-5 h-3.5 sm:h-5"
-              />
-            </a>
-            <a
-              href="https://medium.com/@sabrieladriel"
-              className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
-              title="Medium"
-            >
-              <img
-                src="/assets/social-icons/Medium--Streamline-Iconoir.svg"
-                alt="Medium"
-                className="w-3.5 sm:w-5 h-3.5 sm:h-5"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/s4burieru_/"
-              className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
-              title="Instagram"
-            >
-              <img
-                src="/assets/social-icons/Instagram--Streamline-Feather.svg"
-                alt="Instagram"
-                className="w-3.5 sm:w-5 h-3.5 sm:h-5"
-              />
-            </a>
+            {SOCIAL_LINKS.map((social) => (
+              <a
+                key={social.title}
+                href={social.href}
+                className="w-10 sm:w-14 h-10 sm:h-14 bg-white/10 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:border-white/40 transition backdrop-blur-lg shadow-sm"
+                title={social.title}
+              >
+                <img
+                  src={social.img}
+                  alt={social.alt}
+                  className="w-3.5 sm:w-5 h-3.5 sm:h-5"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>

@@ -1,12 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-
-const NAV_LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-];
+import { NAV_LINKS } from "../../data/navLinks";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

@@ -1,48 +1,48 @@
 const certifications = [
   {
-    name: 'Introduction to Cybersecurity',
-    image: '/assets/certificates/CISCO Introduction to Cybersecurity.jpg',
+    name: "Introduction to Cybersecurity",
+    image: "/assets/certificates/CISCO Introduction to Cybersecurity.jpg",
   },
   {
-    name: 'HTML Essentials',
-    image: '/assets/certificates/CISCO HTML Essentials.jpg',
+    name: "HTML Essentials",
+    image: "/assets/certificates/CISCO HTML Essentials.jpg",
   },
   {
-    name: 'CSS Essentials',
-    image: '/assets/certificates/CISCO CSS Essentials.jpg',
+    name: "CSS Essentials",
+    image: "/assets/certificates/CISCO CSS Essentials.jpg",
   },
   {
-    name: 'Github Foundations',
-    image: '/assets/certificates/Data Camp Github Foundations.jpg',
+    name: "Github Foundations",
+    image: "/assets/certificates/Data Camp Github Foundations.jpg",
   },
   {
-    name: 'Dark Web, Anonymity, and Cryptocurrency',
+    name: "Dark Web, Anonymity, and Cryptocurrency",
     image:
-      '/assets/certificates/EC-Council Introduction to Dark Web, Anonymity, and Cryptocurrency.jpg',
+      "/assets/certificates/EC-Council Introduction to Dark Web, Anonymity, and Cryptocurrency.jpg",
   },
   {
-    name: 'Introduction to Generative AI',
+    name: "Introduction to Generative AI",
     image:
-      '/assets/certificates/Google Cloud Introduction to Generative AI.jpg',
+      "/assets/certificates/Google Cloud Introduction to Generative AI.jpg",
   },
   {
-    name: 'HTB 2nd Meetup',
-    image: '/assets/certificates/HTB 2nd Meetup.jpg',
+    name: "HTB 2nd Meetup",
+    image: "/assets/certificates/HTB 2nd Meetup.jpg",
   },
   {
-    name: 'Certified Threat Intelligence & Governance Analyst',
+    name: "Certified Threat Intelligence & Governance Analyst",
     image:
-      '/assets/certificates/Red Team Leaders Certified Threat Intelligence & Governance Analyst.jpg',
+      "/assets/certificates/Red Team Leaders Certified Threat Intelligence & Governance Analyst.jpg",
   },
   {
-    name: 'Introduction to OSINT',
+    name: "Introduction to OSINT",
     image:
-      '/assets/certificates/Security Blue Team Introduction to OSINT.jpg',
+      "/assets/certificates/Security Blue Team Introduction to OSINT.jpg",
   },
   {
-    name: 'Developing Designs for User Experience',
+    name: "Developing Designs for User Experience",
     image:
-      '/assets/certificates/TESDA Developing Designs for User Experience.jpg',
+      "/assets/certificates/TESDA Developing Designs for User Experience.jpg",
   },
 ];
 
@@ -76,14 +76,14 @@ export default function CertificationsSection() {
         className="w-screen overflow-hidden"
         style={{
           maskImage:
-            'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
           WebkitMaskImage:
-            'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
         }}
       >
         <div
           className="flex gap-6 animate-infinite-scroll"
-          style={{ width: 'max-content' }}
+          style={{ width: "max-content" }}
         >
           {allCerts.map((cert, index) => (
             <div

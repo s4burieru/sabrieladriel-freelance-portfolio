@@ -1,20 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './portfolio/**/*.{html,js}',
-    './portfolio/partials/**/*.{html,js}',
+    "./portfolio/index.html",
+    "./portfolio/src/**/*.{js,jsx,html}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        'fade-in': 'fadeIn 1s ease-in-out forwards',
-        'fade-in-delayed': 'fadeIn 1s ease-in-out 0.3s forwards',
+        "fade-in": "fadeIn 1s ease-in-out forwards",
+        "fade-in-delayed": "fadeIn 1s ease-in-out 0.3s forwards",
       },
     },
   },
   plugins: [],
-  darkMode: 'class',
-}
+  darkMode: "class",
+};
