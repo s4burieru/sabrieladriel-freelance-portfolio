@@ -93,7 +93,7 @@ export default function Navbar() {
         {/* Right Section: Resume, Theme Toggle */}
         <div className="flex items-center gap-2">
           <a
-            href="./assets/sabriel-adriel-san-agustin-cv.pdf"
+            href="/assets/sabriel-adriel-san-agustin-cv.pdf"
             className="hidden sm:inline-block font-poppins text-sm font-semibold px-4 py-2.5 rounded-full bg-white text-black hover:bg-blue-50 dark:bg-white dark:hover:bg-blue-50 transition-colors duration-200"
           >
             Resumé
@@ -166,7 +166,7 @@ export default function Navbar() {
             );
           })}
           <a
-            href="./assets/sabriel-adriel-san-agustin-cv.pdf"
+            href="/assets/sabriel-adriel-san-agustin-cv.pdf"
             className="font-poppins text-sm font-semibold px-4 py-2 rounded-full bg-white text-black hover:bg-blue-50 transition-colors duration-200 text-center"
             target="_blank"
             rel="noopener noreferrer"

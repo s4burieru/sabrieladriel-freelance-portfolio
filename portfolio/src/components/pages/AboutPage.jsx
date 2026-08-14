@@ -2,25 +2,25 @@ import PageLayout from "../layout/PageLayout";
 
 const LIFE_IMAGES = [
   { src: "/assets/images/life-1.jpg", alt: "Life moment 1" },
-  { src: "./assets/images/life-2.jpg", alt: "Life moment 2" },
-  { src: "./assets/images/life-3.jpg", alt: "Life moment 3" },
-  { src: "./assets/images/life-4.jpeg", alt: "Life moment 4" },
-  { src: "./assets/images/life-5.webp", alt: "Life moment 5" },
-  { src: "./assets/images/life-6.jpg", alt: "Life moment 6" },
-  { src: "./assets/images/life-7.png", alt: "Life moment 7" },
-  { src: "./assets/images/life-8.jpg", alt: "Life moment 8" },
-  { src: "./assets/images/life-9.jpg", alt: "Life moment 9" },
-  { src: "./assets/images/life-10.webp", alt: "Life moment 10" },
-  { src: "./assets/images/life-11.jpg", alt: "Life moment 11" },
-  { src: "./assets/images/life-12.jpg", alt: "Life moment 12" },
-  { src: "./assets/images/life-13.jpg", alt: "Life moment 13" },
-  { src: "./assets/images/life-14.jpg", alt: "Life moment 14" },
-  { src: "./assets/images/life-15.jpg", alt: "Life moment 15" },
-  { src: "./assets/images/life-16.webp", alt: "Life moment 16" },
-  { src: "./assets/images/life-17.jpeg", alt: "Life moment 17" },
-  { src: "./assets/images/life-18.jpg", alt: "Life moment 18" },
-  { src: "./assets/images/life-19.jpg", alt: "Life moment 19" },
-  { src: "./assets/images/life-20.jpg", alt: "Life moment 20" },
+  { src: "/assets/images/life-2.jpg", alt: "Life moment 2" },
+  { src: "/assets/images/life-3.jpg", alt: "Life moment 3" },
+  { src: "/assets/images/life-4.jpeg", alt: "Life moment 4" },
+  { src: "/assets/images/life-5.webp", alt: "Life moment 5" },
+  { src: "/assets/images/life-6.jpg", alt: "Life moment 6" },
+  { src: "/assets/images/life-7.png", alt: "Life moment 7" },
+  { src: "/assets/images/life-8.jpg", alt: "Life moment 8" },
+  { src: "/assets/images/life-9.jpg", alt: "Life moment 9" },
+  { src: "/assets/images/life-10.webp", alt: "Life moment 10" },
+  { src: "/assets/images/life-11.jpg", alt: "Life moment 11" },
+  { src: "/assets/images/life-12.jpg", alt: "Life moment 12" },
+  { src: "/assets/images/life-13.jpg", alt: "Life moment 13" },
+  { src: "/assets/images/life-14.jpg", alt: "Life moment 14" },
+  { src: "/assets/images/life-15.jpg", alt: "Life moment 15" },
+  { src: "/assets/images/life-16.webp", alt: "Life moment 16" },
+  { src: "/assets/images/life-17.jpeg", alt: "Life moment 17" },
+  { src: "/assets/images/life-18.jpg", alt: "Life moment 18" },
+  { src: "/assets/images/life-19.jpg", alt: "Life moment 19" },
+  { src: "/assets/images/life-20.jpg", alt: "Life moment 20" },
 ];
 
 export default function AboutPage() {
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2">
                   <span>
                     <img
-                      src="assets/icons/birthday.svg"
+                      src="/assets/icons/birthday.svg"
                       className="w-4 h-4"
                       alt="Birthday"
                     />
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2">
                   <span>
                     <img
-                      src="assets/icons/school.svg"
+                      src="/assets/icons/school.svg"
                       className="w-4 h-4"
                       alt="School"
                     />
