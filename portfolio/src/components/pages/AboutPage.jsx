@@ -21,6 +21,8 @@ const LIFE_IMAGES = [
   { src: "/assets/images/life-18.jpg", alt: "Life moment 18" },
   { src: "/assets/images/life-19.jpg", alt: "Life moment 19" },
   { src: "/assets/images/life-20.jpg", alt: "Life moment 20" },
+  { src: "/assets/images/life-21.jpg", alt: "Life moment 21" },
+  { src: "/assets/images/life-22.jpg", alt: "Life moment 22" },
 ];
 
 export default function AboutPage() {
@@ -104,18 +106,18 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  Now I'm exploring various areas of tech, and I'm discovering
-                  my real passion lies in cybersecurity, particularly in OSINT
-                  investigation. It&rsquo;s a field that challenges me to think
-                  critically, stay curious, and continuously learn.
+                  Now I'm focused on growing as a full-stack developer, learning
+                  how to build complete web applications from the front end to
+                  the back end. I enjoy solving problems, exploring new
+                  technologies, and turning ideas into functional and meaningful
+                  digital experiences.
                 </p>
 
                 <p>
-                  I believe in taking initiative &mdash; when you see a
-                  problem or an opportunity, dive in, build, and experiment.
-                  Test your ideas, learn from mistakes, and keep improving
-                  along the way. Every step is a chance to grow and make a
-                  difference.
+                  I believe in taking initiative &mdash; when you see a problem
+                  or an opportunity, dive in, build, and experiment. Test your
+                  ideas, learn from mistakes, and keep improving along the way.
+                  Every step is a chance to grow and make a difference.
                 </p>
               </div>
             </div>
@@ -157,8 +159,8 @@ export default function AboutPage() {
                   That young kid in the photo was fascinated by how things
                   worked and the endless possibilities of the digital world.
                   From those early moments of curiosity and exploration,
-                  I&rsquo;ve grown into someone who builds, creates, and
-                  pushes beyond what I thought was possible.
+                  I&rsquo;ve grown into someone who builds, creates, and pushes
+                  beyond what I thought was possible.
                 </p>
 
                 <p>

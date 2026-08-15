@@ -17,19 +17,19 @@ export default function AboutSection() {
         {/* Content */}
         <div>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6 leading-relaxed">
-            I've explored various areas of technology, including
-            front-end web development, video editing, UI/UX, and graphic
-            design. Through these experiences, I've built a strong
-            foundation in both creativity and technical skills, allowing me to
-            approach projects with a well-rounded perspective.
+            I've explored different areas of technology, including web
+            development, UI/UX design, video editing, and graphic design. These
+            experiences have helped me build a strong combination of technical
+            and creative skills, allowing me to approach projects from both a
+            developer's and a designer's perspective.
           </p>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 leading-relaxed">
-            While I enjoy working across these different fields, I've
-            discovered that my true passion lies in cybersecurity,
-            particularly in OSINT investigation. I love the challenge of
-            uncovering information, analyzing data from open sources, and
-            staying one step ahead in an ever-evolving digital landscape.
+            I'm currently focused on growing as a full-stack developer, learning
+            how to build complete and scalable web applications from front-end
+            interfaces to back-end systems and databases. I enjoy learning new
+            technologies, solving problems, and turning ideas into functional
+            and user-friendly digital experiences.
           </p>
         </div>
       </div>
