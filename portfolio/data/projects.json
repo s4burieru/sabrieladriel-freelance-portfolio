@@ -11,15 +11,15 @@
   },
   {
     "id": 2,
-    "title": "ESCR GWA Calculator",
-    "description": "A grade tracking and GWA calculation tool that helps students monitor their academic performance and plan for their target grades.",
-    "thumbnail": "/assets/works-thumbnails/gwa-calcu-thumbnail.png",
-    "website": "https://s4burieru.github.io/gwa-calculator/",
-    "source": "https://github.com/s4burieru/gwa-calculator",
-    "category": ["web development"],
-    "technologies": ["HTML", "CSS", "JavaScript", "VS Code"]
+    "title": "Laradama",
+    "description": "A UI/UX prototype for an image-to-music app that transforms photos into unique musical experiences by interpreting visual elements, mood, atmosphere, and the story behind each image.",
+    "thumbnail": "/assets/works-thumbnails/laradama-thumbnail.png",
+    "website": "#",
+    "source": "#",
+    "figmaLink": "https://www.figma.com/proto/Y1LF6CLAY07xulFwSOpYr3/Laradama-App?node-id=64-3&p=f&viewport=550%2C359%2C0.07&t=trJPmj0cf78kcnJ0-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=80%3A565&show-proto-sidebar=1&page-id=0%3A1",
+    "category": ["uiux design"],
+    "technologies": ["Figma", "Photoshop"]
   },
-
   {
     "id": 3,
     "title": "GadgetSpot Ecommerce",
@@ -34,6 +34,16 @@
   },
   {
     "id": 4,
+    "title": "ESCR GWA Calculator",
+    "description": "A grade tracking and GWA calculation tool that helps students monitor their academic performance and plan for their target grades.",
+    "thumbnail": "/assets/works-thumbnails/gwa-calcu-thumbnail.png",
+    "website": "https://s4burieru.github.io/gwa-calculator/",
+    "source": "https://github.com/s4burieru/gwa-calculator",
+    "category": ["web development"],
+    "technologies": ["HTML", "CSS", "JavaScript", "VS Code"]
+  },
+  {
+    "id": 5,
     "title": "Esports Executive Information System",
     "description": "A comprehensive management system for esports organizations, enabling efficient tracking, scheduling, and administration of teams and events.",
     "thumbnail": "/assets/works-thumbnails/esports-eis-thumbnail.png",
@@ -43,7 +53,7 @@
     "technologies": ["VB.NET", "GunaUI", "MS Access", "Visual Studio"]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "DJ Levi Reels",
     "description": "A collection of short-form reels edited for DJ Levi featuring live gigs, energetic crowd moments, and cinematic cuts, enhanced with POV-style narratives and bold captions optimized for social media.",
     "thumbnail": "/assets/works-thumbnails/dj-levi-thumbnail.png",
@@ -53,7 +63,7 @@
     "technologies": ["CapCut"]
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Crisppi's Reels",
     "description": "A collection of promotional reels for Crisppi's Chicken, featuring cinematic food shots, dynamic edits, and engaging captions designed to boost brand awareness and social media engagement.",
     "thumbnail": "/assets/works-thumbnails/crisppis-thumbnail.jpg",
@@ -63,7 +73,7 @@
     "technologies": ["CapCut"]
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Pililla Parish Jersey",
     "description": "A client-requested jersey design created with a focus on clean visuals, balanced layout, and meaningful elements that represent the parish.",
     "thumbnail": "/assets/works-thumbnails/pililla-parish-thumbnail.jpg",
@@ -74,7 +84,7 @@
     "technologies": ["Photoshop"]
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "BSP Unit No. 759 Jersey",
     "description": "A unit jersey design for a school, developed with emphasis on simplicity, readability, and representing the identity and values of the group.",
     "thumbnail": "/assets/works-thumbnails/bsp-unit-thumbnail.jpg",
@@ -85,7 +95,7 @@
     "technologies": ["Photoshop"]
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "ESCR BSIT Lanyard",
     "description": "A lanyard design for a school, developed with emphasis on simplicity, readability, and representing the identity and values of the group.",
     "thumbnail": "/assets/works-thumbnails/escr-bsit-lanyard-thumbnail.png",
@@ -96,7 +106,7 @@
     "technologies": ["Photoshop"]
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Scouting Formal Invitaion Video",
     "description": "An invitation video designed to promote scouting activities by highlighting events, community involvement, memorable experiences, and the strong sense of camaraderie within the organization.",
     "thumbnail": "/assets/works-thumbnails/bsp-invitation-thumbnail.png",
@@ -106,7 +116,7 @@
     "technologies": ["CapCut"]
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "Serveezio SaaS Landing Page",
     "description": "Designed a sleek SaaS landing page concept with a modern interface, visual hierarchy, and user-focused experience.",
     "thumbnail": "/assets/works-thumbnails/serveezio-thumbnail.png",
@@ -116,7 +126,7 @@
     "technologies": ["Figma", "Photoshop"]
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "Personalized Clothing Boxy Cropped Shirt",
     "description": "A personal clothing design concept created to explore custom streetwear, branding, and visual identity through modern apparel design.",
     "thumbnail": "/assets/works-thumbnails/cropped-shirt-thumbnail.png",
